@@ -28,7 +28,7 @@
 |              Авто claiming of reward               |     ✅     |
 
 
-## [Settings](https://github.com/asish1346/NotPixel/blob/main/.env-example/)
+## [Settings](https://github.com/asish1346/NotPixels/blob/main/.env-example/)
 |                     Settings                      |                                                         Description                                                          |
 |:-------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------:|
 |               **API_ID / API_HASH**               |                           Platform data from which to run the Telegram session (default - android)                           |
@@ -65,10 +65,10 @@ Before you begin, make sure you have the following installed:
 3. Record the API_ID and API_HASH provided after registering your application in the .env file.
 
 ## Installation
-You can download the [**repository**](https://github.com/asish1346/NotPixelBot) by cloning it to your system and installing the necessary dependencies:
+You can download the [**repository**](https://github.com/asish1346/NotPixels) by cloning it to your system and installing the necessary dependencies:
 ```shell
-git clone https://github.com/asish1346/NotPixelBot.git
-cd NotPixelBot
+git clone https://github.com/asish1346/NotPixels.git
+cd NotPixels
 ```
 
 Then you can do automatic installation by typing:
@@ -112,6 +112,7 @@ You can also use arguments for quick start, for example:
 
 # 1 - Start drawing 🎨️
 # 2 - Creates a session 👨‍🎨
+# 3 - Using Query
 ```
 
 # Windows manual installation
