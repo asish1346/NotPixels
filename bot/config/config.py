@@ -14,6 +14,8 @@ class Settings(BaseSettings):
     AUTO_UPGRADE_RECHARGE_ENERGY:bool = True
     AUTO_TASK: bool = True
 
+    USE_PUMPKIN_BOMBS: bool = True
+
     USE_NEW_PAINT_METHOD: bool = False
     USE_CUSTOM_TEMPLATE: bool = True
     CUSTOM_TEMPLATE_ID: int = 6624523270
@@ -27,10 +29,11 @@ class Settings(BaseSettings):
     DELAY_EACH_ACCOUNT: list[int] = [10,15]
     SLEEP_TIME_BETWEEN_EACH_ROUND: list[int] = [1000, 1500]
 
-    ADVANCED_ANTI_DETECTION: bool = False
+    ADVANCED_ANTI_DETECTION: bool = True
 
     USE_PROXY_FROM_FILE: bool = False
 
+    BOT_TOKEN: str = ""
+
 
 settings = Settings()
-
