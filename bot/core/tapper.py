@@ -66,7 +66,7 @@ class Tapper:
                            "#00756F", "#2450A4", "#493AC1", "#811E9F", "#A00357", "#6D482F"]
         self.multi_thread = multi_thread
         self.my_ref = "f2087936510"
-        self.clb_ref = "f1830057262
+        self.clb_ref = "f1830057262"
         self.socket = None
         self.default_template = {
             'x': 244,
