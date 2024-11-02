@@ -66,7 +66,7 @@ class Tapper:
                            "#00756F", "#2450A4", "#493AC1", "#811E9F", "#A00357", "#6D482F"]
         self.multi_thread = multi_thread
         self.my_ref = "f2087936510"
-        self.clb_ref = "f1830057262"
+        self.clb_ref = "f1830057262
         self.socket = None
         self.default_template = {
             'x': 244,
@@ -126,11 +126,15 @@ class Tapper:
 
             while True:
                 try:
-                    peer = await self.tg_client.resolve_peer('notpx_bot')
+                    peer = await self.tg_client.resolve_peer('notpixel')
                     break
                 except FloodWait as fl:
 
                     logger.warning(f"<light-yellow>{self.session_name}</light-yellow> | FloodWait {fl}")
+                    async for dialog in self.tg_client.get_dialogs():
+                        if dialog.chat and dialog.chat.username and dialog.chat.username == "notpixel":
+                            break
+
             web_view = await self.tg_client.invoke(RequestAppWebView(
                 peer=peer,
                 app=InputBotAppShortName(bot_id=peer, short_name="app"),
@@ -726,7 +730,7 @@ class Tapper:
                                     res = session.get(f"{API_GAME_ENDPOINT}/mining/task/check/nikolai", headers=headers)
                                     if res.status_code == 200 and res.json()['nikolai']:
                                         logger.success(
-                                            f"{self.session_name} | <green>Successfully complete task <cyan>nikolai</cyan>!</green>")                                
+                                            f"{self.session_name} | <green>Successfully complete task <cyan>nikolai</cyan>!</green>")
                                 if "pumpkin" not in self.completed_task :
                                     res = session.get(f"{API_GAME_ENDPOINT}/mining/task/check/pumpkin", headers=headers)
                                     if res.status_code == 200 and res.json()['pumpkin']:
