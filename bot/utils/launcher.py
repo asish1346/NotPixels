@@ -31,7 +31,7 @@ start_text = """
     Auto Paint Tool For NotPixel -Asʜᴜ || ☠️ xᴅ
     Author  : Asʜᴜ || ☠️ xᴅ
     Get Updates: https://telegram.dog/lootersera_th
-
+    Version:- 1.1
 Select an action:
 
     1. Start drawing (session) 🎨️
