@@ -380,7 +380,7 @@ class Tapper:
             change = max(0, cur_balance - self.balance)
             self.balance = cur_balance
             logger.success(
-                f"{self.session_name} | Painted <cyan>{yx}</cyan> with color: <cyan>{color}</cyan> | Earned +<red>{change}</red> px | Balance: <cyan>{self.balance}</cyan> px")
+                f"{self.session_name} |🖌 Painted <cyan>{yx}</cyan> with color: <cyan>{color}</cyan> | Earned +<red>{change}</red> px | Balance: <cyan>{self.balance}</cyan> px")
 
             await asyncio.sleep(delay=randint(delay_start, delay_end))
             return True
@@ -450,7 +450,7 @@ class Tapper:
                            json=payload)
         if res.status_code == 200:
             logger.success(
-                f"{self.session_name} | <green>Painted <cyan>{pxId}</cyan> successfully new color: <cyan>{color}</cyan> | Earned <light-blue>{round(int(res.json()['balance']) - self.balance)}</light-blue> | Balace: <light-blue>{res.json()['balance']}</light-blue> | Repaint left: <yellow>{chance_left}</yellow></green>")
+                f"{self.session_name} |🖌 <green>Painted <cyan>{pxId}</cyan> successfully new color: <cyan>{color}</cyan> | Earned <light-blue>{round(int(res.json()['balance']) - self.balance)}</light-blue> | Balace: <light-blue>{res.json()['balance']}</light-blue> | Repaint left: <yellow>{chance_left}</yellow></green>")
             self.balance = int(res.json()['balance'])
             return True
         else:
